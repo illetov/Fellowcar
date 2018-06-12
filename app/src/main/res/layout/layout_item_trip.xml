@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/photo_driver"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_person_black_24dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/name_driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/photo_driver"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="Александр " />
+
+    <TextView
+        android:id="@+id/age_driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/name_driver"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/name_driver"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:text="19" />
+
+    <TextView
+        android:id="@+id/first_way_driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_driver"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/photo_driver"
+        android:textSize="14sp"
+        tools:text="Откуда" />
+
+    <TextView
+        android:id="@+id/last_way_driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_way_driver"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/photo_driver"
+        android:textSize="14sp"
+        tools:text="Краснодар" />
+
+    <TextView
+        android:id="@+id/distance_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp"
+        tools:text="6 km at you" />
+
+    <TextView
+        android:id="@+id/price_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/distance_way"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="2dp"
+        android:gravity="end"
+        android:textSize="16sp"
+        tools:text="120 km в пути" />
+
+    <TextView
+        android:id="@+id/nearby_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/price_way"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="2dp"
+        android:gravity="end"
+        android:textSize="16sp"
+        tools:text="550 Р" />
+
+</RelativeLayout>
